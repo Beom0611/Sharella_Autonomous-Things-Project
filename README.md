@@ -1,4 +1,4 @@
-# Autonomous-Things-Project_Sharella
+# Sharella-Autonomous_Things_Project
 
 Designed and implemented a prototype of Autonomous System “Sharella (Sharing Economy+Umbrella)” 
 based on Firebase to integrate with customized app and Raspberry Pi which controls the hardware. 
