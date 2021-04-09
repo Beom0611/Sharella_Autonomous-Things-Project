@@ -27,10 +27,10 @@ void loop()
 
   if (BTSerial.available()) {
 
-    byte data = BTSerial.read();                                                // 블루투스 모듈에서 아두이노로 송신된 정보를 data 로 저장
-                                                            // 저장된 data 를 시리얼 모니터에 입력
+    byte data = BTSerial.read();                                              // 블루투스 모듈에서 아두이노로 송신된 정보를 data 로 저장
+                                                           
 
-    if (data == '1') {
+    if (data == '1') {                                                        // data = 1 이면 led 를 키고, BTSerial 과 Serial 에 'on' 입력
 
       digitalWrite(ledPin, HIGH);
 
@@ -38,9 +38,9 @@ void loop()
 
       Serial.write("1");
 
-    }                                                                                  // data = 0 이면 led 를 끄고, BTSerial 과 Serial 에 'off' 입력
+    }                                                                                 
 
-    else if (data == '0') {
+    else if (data == '0') {                                                   // data = 0 이면 led 를 끄고, BTSerial 과 Serial 에 'off' 입력
 
       digitalWrite(ledPin, LOW);
 
@@ -48,7 +48,7 @@ void loop()
 
       Serial.write("0");
 
-    }                                                                                  // data = 1 이면 led 를 키고, BTSerial 과 Serial 에 'on' 입력
+    }                                                                                  
 
     else {
 
