@@ -16,7 +16,7 @@ void setup() {
   mySerial.begin(9600);
 }
 
-void loop() { //코드를 무한반복합니다.
+void loop() { //코드를 무한반복
   if (mySerial.available()) { //블루투스에서 넘어온 데이터가 있다면
     Serial.println(mySerial.read()); //시리얼모니터에 데이터를 출력
   }
